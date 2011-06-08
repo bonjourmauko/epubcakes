@@ -1,9 +1,9 @@
 environment: production
 chdir: /home/hyperion/public_html/empaque_pulento
-address: 50.57.70.42
+address: 127.0.0.1
 user: www-data
 group: www-data
-port: 80
+port: 3000
 pid: /home/hyperion/public_html/empaque_pulento/current/tmp/thin.pid
 rackup: /home/hyperion/public_html/empaque_pulento/current/config.ru
 log: /home/hyperion/public_html/empaque_pulento/current/log/thin.log
