@@ -8,4 +8,4 @@ disable :run, :reload
 
 require 'init'
 
-run EmpaquePulento::Init.new
+run Epubcakes::Init.new

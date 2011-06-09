@@ -1,4 +1,4 @@
-module EmpaquePulento
+module Epubcakes
   class Init < Sinatra::Base
   
     get "/" do
