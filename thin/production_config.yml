@@ -1,5 +1,5 @@
 environment: production
-address: 0.0.0.0
+address: 127.0.0.1
 user: hyperion
 group: wheel
 port: 3000
