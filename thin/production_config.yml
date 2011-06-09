@@ -3,6 +3,7 @@ address: 0.0.0.0
 user: hyperion
 group: wheel
 port: 3000
+servers: 4
 chdir: /home/hyperion/public_html/epubcakes/current
 pid: tmp/thin.pid
 rackup: config.ru
