@@ -6,7 +6,7 @@ include Stalker
 
 
 job "epub" do |args|
-  token = Digest::MD5.hexdigest rand(50**length).to_s(50)
+  token = Digest::MD5.hexdigest rand(36**32).to_s(36)
   epub = Epubcakes::Storage::Epub.new token
   epub.download args['container']
   epub.zip!
