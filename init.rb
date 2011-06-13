@@ -14,12 +14,7 @@ module Epubcakes
     # ???
     post "/" do
       begin
-        epub = Epubcakes::Storage::Epub.new
-        epub.download params[:container]
-        epub.zip!
-        response = epub.upload('ebooks', params[:container])
-        epub.flush!
-        response.to_json
+        Stalker.enqueue("epub", :container => params[:container]).to_json
       rescue => e
         error 500, e.message.to_json
       end
