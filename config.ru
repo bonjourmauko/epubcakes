@@ -1,4 +1,5 @@
 require 'rubygems'
+require 'config/daemon'
 require 'bundler'
 Bundler.require
 
