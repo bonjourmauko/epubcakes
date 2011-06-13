@@ -6,7 +6,7 @@ set :environment, :production
 set :port, 3000
 disable :run, :reload
 
-run "config/jobs.rb"
 require 'init'
 
+run "config/jobs.rb"
 run Epubcakes::Init.new
