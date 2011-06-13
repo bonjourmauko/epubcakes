@@ -1,4 +1,5 @@
 include Stalker
+include "storage"
 
 job "epub" do |container|
   epub = Epubcakes::Storage::Epub.new
