@@ -15,10 +15,11 @@ module Epubcakes
     post "/" do
       begin
         epub = Epubcakes::Storage::Epub.new
+        epub.flush!
         epub.download params[:container]
-        epub.zip
+        epub.zip!
         response = epub.upload('ebooks', params[:container])
-        epub.flush
+        epub.flush!
         response.to_json
       rescue => e
         error 500, e.message.to_json
