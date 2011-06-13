@@ -1,3 +1,4 @@
+require 'fileutils'
 require 'cloudfiles'
 require 'storage'
 include Stalker
