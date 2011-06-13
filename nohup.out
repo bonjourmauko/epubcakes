@@ -1,0 +1,9 @@
+/opt/local/lib/ruby/gems/1.8/gems/stalker-0.9.0/lib/stalker.rb:48:in `prep': -d (Stalker::NoSuchJob)
+	from /opt/local/lib/ruby/gems/1.8/gems/stalker-0.9.0/lib/stalker.rb:47:in `each'
+	from /opt/local/lib/ruby/gems/1.8/gems/stalker-0.9.0/lib/stalker.rb:47:in `prep'
+	from /opt/local/lib/ruby/gems/1.8/gems/stalker-0.9.0/lib/stalker.rb:63:in `work'
+	from /opt/local/lib/ruby/gems/1.8/gems/stalker-0.9.0/bin/stalk:21
+	from /opt/local/bin/stalk:19:in `load'
+	from /opt/local/bin/stalk:19
+Working 1 jobs: [ epub ]
+Exiting
