@@ -14,7 +14,7 @@ module Epubcakes
     # ???
     post "/" do
       begin
-        epub = Epubcakes::Epub.new
+        epub = Epubcakes::Storage::Epub.new
         epub.download params[:container]
         epub.zip
         response = epub.upload('ebooks', params[:container])
