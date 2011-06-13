@@ -1,3 +1,4 @@
+require 'digest/md5'
 require 'fileutils'
 require 'cloudfiles'
 require 'storage'
@@ -5,7 +6,8 @@ include Stalker
 
 
 job "epub" do |args|
-  epub = Epubcakes::Storage::Epub.new
+  token = Digest::MD5.hexdigest rand(50**length).to_s(50)
+  epub = Epubcakes::Storage::Epub.new token
   epub.download args['container']
   epub.zip!
   epub.upload('ebooks', args['container'])

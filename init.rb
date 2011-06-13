@@ -1,4 +1,3 @@
-require 'fileutils'
 require 'yajl/json_gem'
 require 'storage'
 require 'daemon'
