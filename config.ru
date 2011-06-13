@@ -8,5 +8,4 @@ disable :run, :reload
 
 require 'init'
 
-run "config/jobs.rb"
 run Epubcakes::Init.new
