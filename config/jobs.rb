@@ -3,11 +3,11 @@ require 'storage'
 include Stalker
 
 
-job "epub" do |container|
+job "epub" do |args|
   epub = Epubcakes::Storage::Epub.new
-  epub.download container
+  epub.download args['container']
   epub.zip!
-  epub.upload('ebooks', container)
+  epub.upload('ebooks', args['container'])
   epub.flush!
 end
 
