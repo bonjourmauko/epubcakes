@@ -10,7 +10,8 @@ job "epub" do |args|
   epub = Epubcakes::Storage::Epub.new token
   epub.download args['container']
   epub.zip!
-  epub.upload('ebooks', args['container'])
+  params = epub.upload('ebooks', args['container'])
+  Nestful.post "tapir.heroku.com/master", :params => params
   epub.flush!
 end
 
